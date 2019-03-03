@@ -21,6 +21,6 @@
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2019 Вячеслав Бирюков. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
-	<string>dvd_screensaverView</string>
+	<string>SwiftDVDScreenSaver</string>
 </dict>
 </plist>

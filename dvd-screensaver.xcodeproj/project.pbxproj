@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		354139CA222932FD00BA4D04 /* dvd_screensaverView.h in Headers */ = {isa = PBXBuildFile; fileRef = 354139C9222932FD00BA4D04 /* dvd_screensaverView.h */; };
-		354139CC222932FD00BA4D04 /* dvd_screensaverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 354139CB222932FD00BA4D04 /* dvd_screensaverView.m */; };
+		354139D62229402B00BA4D04 /* SwiftDVDScreenSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354139D52229402B00BA4D04 /* SwiftDVDScreenSaver.swift */; };
+		35A0FC032229510A00206786 /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35A0FC022229510A00206786 /* images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		354139C6222932FD00BA4D04 /* dvd-screensaver.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "dvd-screensaver.saver"; sourceTree = BUILT_PRODUCTS_DIR; };
-		354139C9222932FD00BA4D04 /* dvd_screensaverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dvd_screensaverView.h; sourceTree = "<group>"; };
-		354139CB222932FD00BA4D04 /* dvd_screensaverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dvd_screensaverView.m; sourceTree = "<group>"; };
 		354139CD222932FD00BA4D04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		354139D52229402B00BA4D04 /* SwiftDVDScreenSaver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftDVDScreenSaver.swift; sourceTree = "<group>"; };
+		35A0FC022229510A00206786 /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +32,7 @@
 		354139BC222932FD00BA4D04 = {
 			isa = PBXGroup;
 			children = (
+				35A0FC022229510A00206786 /* images.xcassets */,
 				354139C8222932FD00BA4D04 /* dvd-screensaver */,
 				354139C7222932FD00BA4D04 /* Products */,
 			);
@@ -48,8 +49,7 @@
 		354139C8222932FD00BA4D04 /* dvd-screensaver */ = {
 			isa = PBXGroup;
 			children = (
-				354139C9222932FD00BA4D04 /* dvd_screensaverView.h */,
-				354139CB222932FD00BA4D04 /* dvd_screensaverView.m */,
+				354139D52229402B00BA4D04 /* SwiftDVDScreenSaver.swift */,
 				354139CD222932FD00BA4D04 /* Info.plist */,
 			);
 			path = "dvd-screensaver";
@@ -62,7 +62,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				354139CA222932FD00BA4D04 /* dvd_screensaverView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +97,7 @@
 				TargetAttributes = {
 					354139C5222932FD00BA4D04 = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -124,6 +124,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35A0FC032229510A00206786 /* images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,7 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				354139CC222932FD00BA4D04 /* dvd_screensaverView.m in Sources */,
+				354139D62229402B00BA4D04 /* SwiftDVDScreenSaver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,11 +234,16 @@
 		354139D1222932FD00BA4D04 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "dvd-screensaver/Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "b-ff.dvd-screensaver";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Debug;
@@ -245,11 +251,15 @@
 		354139D2222932FD00BA4D04 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "dvd-screensaver/Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "b-ff.dvd-screensaver";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Release;
@@ -273,6 +283,7 @@
 				354139D2222932FD00BA4D04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
