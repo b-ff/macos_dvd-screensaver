@@ -8,14 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		354139D62229402B00BA4D04 /* SwiftDVDScreenSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354139D52229402B00BA4D04 /* SwiftDVDScreenSaver.swift */; };
-		35A0FC032229510A00206786 /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35A0FC022229510A00206786 /* images.xcassets */; };
+		35A8E9B6222D07FF00010150 /* dvd-blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A8E9B2222D07FF00010150 /* dvd-blue.png */; };
+		35A8E9B7222D07FF00010150 /* dvd-green.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A8E9B3222D07FF00010150 /* dvd-green.png */; };
+		35A8E9B8222D07FF00010150 /* dvd-red.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A8E9B4222D07FF00010150 /* dvd-red.png */; };
+		35A8E9B9222D07FF00010150 /* dvd-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A8E9B5222D07FF00010150 /* dvd-yellow.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		354139C6222932FD00BA4D04 /* dvd-screensaver.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "dvd-screensaver.saver"; sourceTree = BUILT_PRODUCTS_DIR; };
 		354139CD222932FD00BA4D04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		354139D52229402B00BA4D04 /* SwiftDVDScreenSaver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftDVDScreenSaver.swift; sourceTree = "<group>"; };
-		35A0FC022229510A00206786 /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = images.xcassets; sourceTree = "<group>"; };
+		35A8E9B2222D07FF00010150 /* dvd-blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dvd-blue.png"; sourceTree = "<group>"; };
+		35A8E9B3222D07FF00010150 /* dvd-green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dvd-green.png"; sourceTree = "<group>"; };
+		35A8E9B4222D07FF00010150 /* dvd-red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dvd-red.png"; sourceTree = "<group>"; };
+		35A8E9B5222D07FF00010150 /* dvd-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dvd-yellow.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,7 +38,6 @@
 		354139BC222932FD00BA4D04 = {
 			isa = PBXGroup;
 			children = (
-				35A0FC022229510A00206786 /* images.xcassets */,
 				354139C8222932FD00BA4D04 /* dvd-screensaver */,
 				354139C7222932FD00BA4D04 /* Products */,
 			);
@@ -49,10 +54,22 @@
 		354139C8222932FD00BA4D04 /* dvd-screensaver */ = {
 			isa = PBXGroup;
 			children = (
+				35A8E9B1222D07D500010150 /* images */,
 				354139D52229402B00BA4D04 /* SwiftDVDScreenSaver.swift */,
 				354139CD222932FD00BA4D04 /* Info.plist */,
 			);
 			path = "dvd-screensaver";
+			sourceTree = "<group>";
+		};
+		35A8E9B1222D07D500010150 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				35A8E9B2222D07FF00010150 /* dvd-blue.png */,
+				35A8E9B3222D07FF00010150 /* dvd-green.png */,
+				35A8E9B4222D07FF00010150 /* dvd-red.png */,
+				35A8E9B5222D07FF00010150 /* dvd-yellow.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +141,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35A0FC032229510A00206786 /* images.xcassets in Resources */,
+				35A8E9B8222D07FF00010150 /* dvd-red.png in Resources */,
+				35A8E9B6222D07FF00010150 /* dvd-blue.png in Resources */,
+				35A8E9B7222D07FF00010150 /* dvd-green.png in Resources */,
+				35A8E9B9222D07FF00010150 /* dvd-yellow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

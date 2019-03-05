@@ -82,25 +82,22 @@ class SwiftDVDScreenSaver: ScreenSaverView {
             self.isBounced = false
         }
         
-        let image: NSImage? = NSImage(named: "images.xcassets/\(self.imageNames[self.currentImageIndex])")
+        let image: NSImage? = NSImage(byReferencingFile: "images/\(self.imageNames[self.currentImageIndex]).png")
         
         if (image != nil) {
-            image!.draw(
-                in: NSRect(
-                    origin: NSPoint(x: pointX, y: pointY),
-                    size: image!.size
-                )
-            )
-        } else {
-            NSColor.black.set()
-            
-            let hello: String = "Current image is: \(self.imageNames[self.currentImageIndex]) and it's \(String(describing: image))!"
-            
-            hello.draw(
-                at: NSPoint(x: self.pointX, y: self.pointY),
-                withAttributes:nil
-            )
+            image!.draw(in: self.bounds)
+            let imageView: NSImageView = NSImageView(image: image!)
+            self.addSubview(imageView)
+            imageView.draw(self.bounds)
+        
+//            let hello: String = "Current image is: \(self.imageNames[self.currentImageIndex]) and it's \(String(describing: image))!"
+//            
+//            hello.draw(
+//                at: NSPoint(x: self.pointX, y: self.pointY),
+//                withAttributes: nil
+//            )
         }
+        
         
         self.calculateMove()
     }
